@@ -127,3 +127,13 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+MCD.png
+datasets/product_category_name_translation.csv
+datasets/olist_sellers_dataset.csv
+datasets/olist_products_dataset.csv
+datasets/olist_orders_dataset.csv
+datasets/olist_order_reviews_dataset.csv
+datasets/olist_order_payments_dataset.csv
+datasets/olist_order_items_dataset.csv
+datasets/olist_geolocation_dataset.csv
+datasets/olist_customers_dataset.csv
