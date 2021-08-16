@@ -1,6 +1,9 @@
 #######################
 ###PCA Decomposition###
 #######################
+import matplotlib.pyplot as plt
+import numpy as np
+
 
 def display_circles(pcs, n_comp, pca, axis_ranks, labels=None, label_rotation=0, lims=None):
     for d1, d2 in axis_ranks: # On affiche les 3 premiers plans factoriels, donc les 6 premières composantes
