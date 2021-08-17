@@ -1,10 +1,28 @@
-#######################
-###PCA Decomposition###
-#######################
 import matplotlib.pyplot as plt
 import numpy as np
 
+#########################
+####DISTANCE CALCULUS####
+#########################
 
+def haversine_vectorize(lon1, lat1, lon2, lat2):
+    """Calculate distance between two points with Haversine methods
+    source : https://kanoki.org/2019/12/27/how-to-calculate-distance-in-python-and-pandas-using-scipy-spatial-and-distance-functions/"""
+
+    lon1, lat1, lon2, lat2 = map(np.radians, [lon1, lat1, lon2, lat2])
+
+    newlon = lon2 - lon1
+    newlat = lat2 - lat1
+
+    haver_formula = np.sin(newlat/2.0)**2 + np.cos(lat1) * np.cos(lat2) * np.sin(newlon/2.0)**2
+
+    dist = 2 * np.arcsin(np.sqrt(haver_formula ))
+    km = 6367 * dist #6367 for distance in KM for miles use 3958
+    return km
+
+#######################
+###PCA Decomposition###
+#######################
 def display_circles(pcs, n_comp, pca, axis_ranks, labels=None, label_rotation=0, lims=None):
     for d1, d2 in axis_ranks: # On affiche les 3 premiers plans factoriels, donc les 6 premières composantes
         if d2 < n_comp:
