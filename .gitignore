@@ -139,3 +139,6 @@ datasets/olist_geolocation_dataset.csv
 datasets/olist_customers_dataset.csv
 datasets/data_clustering_complete.csv
 datasets/data_segmentation_rfm.csv
+datasets/clustering_analysis.csv
+datasets/data_kproto_analysis.csv
+datasets/stability.csv
