@@ -146,3 +146,6 @@ datasets/data_clusters.csv
 datasets/data_kprototype.csv
 datasets/stability_kproto.csv
 Illustrations
+datasets/data_kmeans_clusters.csv
+datasets/data_kprototype_clusters.csv
+datasets/data_short.csv
