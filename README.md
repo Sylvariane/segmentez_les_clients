@@ -9,3 +9,5 @@ Dans ce projet, les compétences évaluées sont :
 - Évaluer les performances d’un modèle d'apprentissage non supervisé
 
 De plus, il fallait aussi fournir une évaluation de la durée de la segmentation dans le but de proposer un contrat de maintenance aux clients. 
+
+Ce projet a été soutenu et validé le 5 septembre 2021.
